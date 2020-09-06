@@ -15,10 +15,8 @@
     "yargs-parser": "^19.0.1"
   },
   "scripts": {
-    "copytexts": "rm -rf public/text && cp -R ../text public && sed -i 's/\\.md/.html/g' public/text/*/*.md && sed -i 's/README/index/g' public/text/*/*.md",
-    "predeploy": "npm run copytexts && npm run build",
+    "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
-    "prestart": "npm run copytexts",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
