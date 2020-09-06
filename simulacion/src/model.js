@@ -1,4 +1,4 @@
-const FILENAME = 'decision_tree.xml';
+const FILENAME = 'decision_tree_2020.2.xml';
 
 export default class Model {
     constructor() {
